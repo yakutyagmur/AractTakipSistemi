@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="566.0" style="-fx-background-color: #FFE4E1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aracTakipSistemi.TirController">
+   <children>
+      <Text layoutX="240.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tır">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="7.0" layoutY="472.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+      <Button layoutX="500.0" layoutY="397.0" mnemonicParsing="false" onAction="#musteribilgileri" text="Müşteri Bilgileri" />
+      <Button layoutX="500.0" layoutY="435.0" mnemonicParsing="false" onAction="#saticibilgileri" text="Satıcı Bilgileri" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" />
+      <TableView fx:id="tirtablo" layoutX="14.0" layoutY="71.0" onMouseClicked="#verigetir" prefHeight="200.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="tekerleksutun" prefWidth="95.0" text="Tekerlek Sayısı" />
+          <TableColumn fx:id="tasimasutun" prefWidth="109.0" text="Taşıma Gücü" />
+            <TableColumn fx:id="tipsutun" prefWidth="84.0" text="Tip" />
+            <TableColumn fx:id="serisutun" prefWidth="90.0" text="Seri" />
+            <TableColumn fx:id="kabinsutun" prefWidth="94.0" text="Kabin" />
+            <TableColumn fx:id="yataksutun" prefWidth="105.0" text="Yatak" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tekerlektext" layoutX="21.0" layoutY="283.0" promptText="Tekerlek Sayısı" />
+      <TextField fx:id="yataktext" layoutX="426.0" layoutY="338.0" promptText="Yatak" />
+      <TextField fx:id="kabintext" layoutX="229.0" layoutY="338.0" prefHeight="25.0" prefWidth="149.0" promptText="Kabin" />
+      <TextField fx:id="seritext" layoutX="26.0" layoutY="338.0" promptText="Seri" />
+      <TextField fx:id="tiptext" layoutX="426.0" layoutY="283.0" promptText="Tip" />
+      <TextField fx:id="tasimatext" layoutX="229.0" layoutY="283.0" promptText="Taşıma Gücü" />
+      <Button layoutX="202.0" layoutY="423.0" mnemonicParsing="false" onAction="#ekle" text="ekle" />
+      <Button layoutX="273.0" layoutY="423.0" mnemonicParsing="false" onAction="#sil" text="sil" />
+      <Button layoutX="334.0" layoutY="423.0" mnemonicParsing="false" onAction="#guncelle" text="güncelle" />
+   </children>
+</AnchorPane>

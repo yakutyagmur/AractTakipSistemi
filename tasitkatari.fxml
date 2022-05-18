@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="566.0" style="-fx-background-color: #FFE4E1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aracTakipSistemi.TasitkatariController">
+   <children>
+      <Text layoutX="211.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taşıt Katarı">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="455.0" mnemonicParsing="false" onAction="#geri" text="Geri">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="507.0" layoutY="369.0" mnemonicParsing="false" onAction="#musteribilgileri" text="Müşteri Bilgileri" AnchorPane.leftAnchor="507.0" />
+      <Button layoutX="507.0" layoutY="406.0" mnemonicParsing="false" onAction="#saticibilgileri" text="Satıcı Bilgileri" AnchorPane.leftAnchor="507.0" AnchorPane.rightAnchor="0.0" />
+      <TableView fx:id="tasitkatari_tablo" layoutX="111.0" layoutY="64.0" onMouseClicked="#verigetir" prefHeight="200.0" prefWidth="343.0">
+        <columns>
+          <TableColumn fx:id="romorksutun" prefWidth="100.0" text="Romork Sayısı" />
+          <TableColumn fx:id="yuksekliksutun" prefWidth="78.0" text="Yükseklik" />
+            <TableColumn fx:id="genisliksutun" prefWidth="74.0" text="Genişlik" />
+            <TableColumn fx:id="agirliksutun" prefWidth="90.0" text="Ağırlık" />
+        </columns>
+      </TableView>
+      <Button layoutX="164.0" layoutY="428.0" mnemonicParsing="false" onAction="#ekle" text="ekle" />
+      <Button layoutX="303.0" layoutY="428.0" mnemonicParsing="false" onAction="#guncelle" text="güncelle" />
+      <Button layoutX="231.0" layoutY="428.0" mnemonicParsing="false" onAction="#sil" text="sil" />
+      <TextField fx:id="romorksayisitext" layoutX="72.0" layoutY="288.0" promptText="Romork Sayısı" />
+      <TextField fx:id="genisliktext" layoutX="72.0" layoutY="323.0" promptText="Genişlik" />
+      <TextField fx:id="yuksekliktext" layoutX="317.0" layoutY="288.0" promptText="Yükseklik" />
+      <TextField fx:id="agirliktext" layoutX="317.0" layoutY="323.0" promptText="Ağırlık" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="566.0" style="-fx-background-color: #FFA07A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aracTakipSistemi.AnasayfaController">
+   <children>
+      <Text layoutX="189.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ana Sayfa">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="421.0" layoutY="416.0" mnemonicParsing="false" onAction="#geri" text="Geri">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="28.0" layoutY="97.0" mnemonicParsing="false" onAction="#atvgiris" prefHeight="29.0" prefWidth="135.0" text="Atv Utv" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="403.0" />
+      <Button layoutX="232.0" layoutY="99.0" mnemonicParsing="false" onAction="#tarimmakinesi" prefHeight="25.0" prefWidth="150.0" text="Tarım Makinesi" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="184.0" />
+      <Button layoutX="28.0" layoutY="152.0" mnemonicParsing="false" onAction="#ismakinesi" prefHeight="29.0" prefWidth="141.0" text="İş Makinesi" AnchorPane.bottomAnchor="317.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="403.0" AnchorPane.topAnchor="152.0" />
+      <Button layoutX="229.0" layoutY="152.0" mnemonicParsing="false" onAction="#tasitkatari" prefHeight="25.0" prefWidth="159.0" text="Taşıt Katarı" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="184.0" />
+      <Button layoutX="26.0" layoutY="211.0" mnemonicParsing="false" onAction="#kamyonet" prefHeight="25.0" prefWidth="141.0" text="Kamyonet" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="403.0" />
+      <Button layoutX="232.0" layoutY="211.0" mnemonicParsing="false" onAction="#ticariaraba" prefHeight="25.0" prefWidth="150.0" text="Ticari Araba" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="184.0" />
+      <Button layoutX="30.0" layoutY="262.0" mnemonicParsing="false" onAction="#karavan" prefHeight="29.0" prefWidth="135.0" text="Karavan" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="403.0" />
+      <Button layoutX="231.0" layoutY="264.0" mnemonicParsing="false" onAction="#tir" prefHeight="25.0" prefWidth="150.0" text="Tır" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="184.0" />
+      <Button layoutX="32.0" layoutY="320.0" mnemonicParsing="false" onAction="#motosiklet" prefHeight="25.0" prefWidth="128.0" text="Motosiklet" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="403.0" />
+      <Button layoutX="225.0" layoutY="320.0" mnemonicParsing="false" onAction="#pickup" prefHeight="25.0" prefWidth="159.0" text="Pick Up" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="184.0" />
+   </children>
+</AnchorPane>

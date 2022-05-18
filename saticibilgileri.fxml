@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="aracTakipSistemi.SaticibilgileriController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFE4E1;">
+         <children>
+            <TableView fx:id="saticitablo" layoutX="76.0" layoutY="54.0" onMouseClicked="#verigetir" prefHeight="200.0" prefWidth="442.0">
+               <columns>
+                  <TableColumn fx:id="isimsutun" prefWidth="75.0" text="İsim" />
+                  <TableColumn fx:id="tcsutun" prefWidth="75.0" text="TC" />
+                  <TableColumn fx:id="adressutun" prefWidth="75.0" text="Adres" />
+                  <TableColumn fx:id="yassutun" prefWidth="75.0" text="Yaş" />
+                  <TableColumn fx:id="ehliyetsutun" prefWidth="75.0" text="Ehliyet" />
+                  <TableColumn fx:id="ruhsatsutun" prefWidth="75.0" text="Ruhsat" />
+               </columns>
+            </TableView>
+            <Text layoutX="210.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SATICI BİLGİLERİ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Button layoutX="259.0" layoutY="361.0" mnemonicParsing="false" onAction="#ekle" text="Ekle" />
+            <Button layoutX="308.0" layoutY="361.0" mnemonicParsing="false" onAction="#sil" text="Sil" />
+            <Button layoutX="347.0" layoutY="361.0" mnemonicParsing="false" onAction="#guncelle" text="Güncelle" />
+            <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+            <TextField fx:id="isimtext" layoutX="26.0" layoutY="263.0" promptText="İsim" />
+            <TextField fx:id="yastext" layoutX="26.0" layoutY="298.0" promptText="Yaş" />
+            <TextField fx:id="tctext" layoutX="198.0" layoutY="263.0" promptText="TC" />
+            <TextField fx:id="ehliyettext" layoutX="198.0" layoutY="298.0" promptText="Ehliyet" />
+            <TextField fx:id="adrestext" layoutX="371.0" layoutY="263.0" promptText="Adres" />
+            <TextField fx:id="ruhsattext" layoutX="371.0" layoutY="298.0" promptText="Ruhsat" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

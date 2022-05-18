@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="566.0" style="-fx-background-color: #FFE4E1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aracTakipSistemi.PickupController">
+   <children>
+      <Text layoutX="218.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick Up">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="462.0" mnemonicParsing="false" onAction="#geri" text="Geri">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="500.0" layoutY="362.0" mnemonicParsing="false" onAction="#musteribilgileri" style="-fx-background-color: #F4A460;" text="Musteri  Bilgieri" AnchorPane.leftAnchor="500.0" />
+      <Button layoutX="500.0" layoutY="395.0" mnemonicParsing="false" onAction="#saticibilgileri" text="Satıcı Bilgileri" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" />
+      <TableView fx:id="pickup_tablo" layoutX="138.0" layoutY="61.0" onMouseClicked="#verigetir" prefHeight="200.0" prefWidth="227.0">
+        <columns>
+          <TableColumn fx:id="serisutun" prefWidth="75.0" text="Seri" />
+          <TableColumn fx:id="modelsutun" prefWidth="75.0" text="Model" />
+            <TableColumn fx:id="cekissutun" prefWidth="75.0" text="Çekiş" />
+        </columns>
+      </TableView>
+      <Button layoutX="166.0" layoutY="420.0" mnemonicParsing="false" onAction="#ekle" text="Ekle" />
+      <Button layoutX="226.0" layoutY="420.0" mnemonicParsing="false" onAction="#sil" text="Sil" />
+      <Button layoutX="282.0" layoutY="420.0" mnemonicParsing="false" onAction="#guncelle" text="Guncelle" />
+      <TextField fx:id="seritext" layoutX="29.0" layoutY="276.0" promptText="Seri" />
+      <TextField fx:id="modeltext" layoutX="208.0" layoutY="276.0" promptText="Model" />
+      <TextField fx:id="cekistext" layoutX="385.0" layoutY="276.0" promptText="Çekiş" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="566.0" style="-fx-background-color: #FFE4E1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aracTakipSistemi.KamyonetController">
+   <children>
+      <Text layoutX="219.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamyonet">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="28.0" layoutY="439.0" mnemonicParsing="false" onAction="#geri" text="Geri">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="514.0" layoutY="388.0" mnemonicParsing="false" onAction="#musteribilgileri" style="-fx-background-color: #CD853F;" text="Müsteri Bilgieri" AnchorPane.leftAnchor="514.0" />
+      <Button layoutX="514.0" layoutY="428.0" mnemonicParsing="false" onAction="#saticibilgileri" text="Satıcı Bilgileri" AnchorPane.leftAnchor="514.0" AnchorPane.rightAnchor="0.0" />
+      <TableView fx:id="kamyonet_tablo" layoutX="123.0" layoutY="56.0" onMouseClicked="#verigetir" prefHeight="200.0" prefWidth="301.0">
+        <columns>
+          <TableColumn fx:id="serisutun" prefWidth="75.0" text="Seri" />
+          <TableColumn fx:id="ustyapisutun" prefWidth="75.0" text="Üst Yapı" />
+            <TableColumn fx:id="tasimakapasitesisutun" prefWidth="109.0" text="Taşıma Kapasitesi" />
+            <TableColumn fx:id="kabinsutun" prefWidth="37.0" text="Kabin" />
+        </columns>
+      </TableView>
+      <TextField fx:id="seritext" layoutX="34.0" layoutY="282.0" promptText="Seri" />
+      <TextField fx:id="ustyapitext" layoutX="34.0" layoutY="324.0" promptText="Üst Yapı" />
+      <TextField fx:id="tasimakapasitesitext" layoutX="231.0" layoutY="282.0" promptText="Taşıma Kapasitesi" />
+      <TextField fx:id="kabintext" layoutX="231.0" layoutY="324.0" promptText="Kabin" />
+      <Button layoutX="131.0" layoutY="388.0" mnemonicParsing="false" onAction="#ekle" text="Ekle" />
+      <Button layoutX="205.0" layoutY="388.0" mnemonicParsing="false" onAction="#sil" text="Sil" />
+      <Button layoutX="284.0" layoutY="388.0" mnemonicParsing="false" onAction="#guncelle" text="Güncelle" />
+   </children>
+</AnchorPane>
